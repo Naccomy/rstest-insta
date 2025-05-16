@@ -1,0 +1,6 @@
+[workspace]
+resolver = "3"
+members = ["crates/macros-helpers"]
+
+[workspace.dependencies]
+rstest_insta_macros_helpers = { path = "crates/macros-helpers" }
