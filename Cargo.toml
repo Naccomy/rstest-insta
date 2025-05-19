@@ -1,6 +1,6 @@
 [workspace]
 resolver = "3"
-members = ["crates/macros-helpers"]
+members = ["crates/macros-helpers", "crates/macros"]
 
 [workspace.dependencies]
-rstest_insta_macros_helpers = { path = "crates/macros-helpers" }
+rstest-insta-macros-helpers = { path = "crates/macros-helpers" }
