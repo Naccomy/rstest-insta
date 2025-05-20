@@ -1,6 +1,6 @@
 ---
 source: crates/macros/src/codegen.rs
-expression: formatted
+expression: "test_helpers::pretty(expanded)"
 ---
 fn my_test(#[context] __rstest_insta__ctx: Context) {
     println!("Hello, World!")

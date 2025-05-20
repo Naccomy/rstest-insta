@@ -1,0 +1,7 @@
+---
+source: crates/macros/src/codegen.rs
+expression: "test_helpers::pretty(expanded)"
+---
+fn my_test(#[context] __rstest_insta__ctx: Context, a: usize, b: String) {
+    println!("Hello, World!")
+}

@@ -3,11 +3,11 @@ source: crates/macros/src/codegen.rs
 expression: "test_helpers::pretty(expanded)"
 ---
 #[::rstest::rstest]
-fn my_test(#[context] __rstest_insta__ctx: Context, a: usize) {
-    let __rstest_insta__suffix = __rstest_insta__ctx
+fn my_test(a: usize, #[context] toto: Context) {
+    let __rstest_insta__suffix = toto
         .description
         .map(|s| s.to_string())
-        .unwrap_or(__rstest_insta__ctx.case.unwrap_or(0).to_string());
+        .unwrap_or(toto.case.unwrap_or(0).to_string());
     ::insta::with_settings!(
         { snapshot_suffix => __rstest_insta__suffix }, { { println!("Hello, World!") } }
     )

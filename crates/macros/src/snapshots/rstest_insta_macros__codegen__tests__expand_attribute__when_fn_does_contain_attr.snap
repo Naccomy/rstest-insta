@@ -1,0 +1,10 @@
+---
+source: crates/macros/src/codegen.rs
+expression: "test_helpers::pretty(expanded)"
+---
+#[::rstest::rstest]
+#[attr1]
+#[attr2]
+fn my_test() {
+    println!("Hello, World!")
+}
