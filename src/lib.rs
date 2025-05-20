@@ -19,9 +19,9 @@
 //! }
 //!
 //! // This code will generate snapshots with the following names:
-//! - my_test@0
-//! - my_test@1
-//! - my_test@my_special_case
+//! // - my_test@0
+//! // - my_test@1
+//! // - my_test@my_special_case
 //! ```
 
 mod codegen;

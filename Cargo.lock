@@ -251,14 +251,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "rstest-insta-macros-helpers"
-version = "0.1.0"
-dependencies = [
- "insta",
- "rstest",
-]
-
-[[package]]
 name = "rstest_macros"
 version = "0.25.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
